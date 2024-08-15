@@ -8,9 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: check the code
-      uses: actions/checkout@v
+      uses: actions/checkout@v4
     - name: Get Node
       uses: actions/setup-node@v4
       with:
         node-version: 20.11.x
-        
