@@ -1,0 +1,16 @@
+name: Minha querida pipeline
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: check the code
+      uses: actions/checkout@v
+    - name: Get Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20.11.x
+        
